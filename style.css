@@ -1,0 +1,180 @@
+/* Palet Warna Berdasarkan Logo: Krem Lembut, Merah Muda Pastel, dan Hijau Zaitun Pudar */
+:root {
+    --bg-color: #fcf9f5;
+    --text-primary: #a86c74;
+    --text-secondary: #7a8274;
+    --accent-pink: #dfb6b9;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(252, 249, 245, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 100;
+    border-bottom: 1px solid var(--accent-pink);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    margin: 0 15px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.login-btn, .shop-btn, .submit-btn {
+    background-color: var(--bg-color);
+    border: 1px solid var(--accent-pink);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(223, 182, 185, 0.2);
+}
+
+.login-btn:hover, .shop-btn:hover, .submit-btn:hover {
+    background-color: var(--accent-pink);
+    color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 100px;
+    padding: 50px 20px;
+}
+
+.logo-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.main-logo {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+/* Categories */
+.categories {
+    padding: 50px 20px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px dashed var(--accent-pink);
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Modal Login */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 200; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(252, 249, 245, 0.8);
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: 10% auto; 
+    padding: 40px;
+    border: 2px solid var(--accent-pink);
+    border-radius: 20px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 15px 30px rgba(223, 182, 185, 0.3);
+    position: relative;
+}
+
+.close {
+    color: var(--text-secondary);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--text-primary);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid var(--accent-pink);
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+    background-color: #fffafb;
+}
+
+footer {
+    padding: 30px;
+    color: var(--text-secondary);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    border-top: 1px solid var(--accent-pink);
+}
