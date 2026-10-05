@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lylé Atelier | L'Art de l'Élégance</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Menggunakan font klasik yang elegan -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#home">Beranda</a>
+            <a href="#shop">Koleksi</a>
+            <a href="#about">Tentang Kami</a>
+        </div>
+        <button class="login-btn" onclick="openLoginModal()">Masuk / Login 🎀</button>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="home" class="hero">
+        <div class="logo-container">
+            <!-- Menggunakan logo yang Anda berikan -->
+            <img src="Swan Atelier Luxury Logo.png" alt="Lylé Atelier Logo" class="main-logo">
+        </div>
+        <h1>Koleksi Eksklusif Penuh Keanggunan</h1>
+        <p>Pakaian, Sepatu, Kacamata, hingga Make-up High-End untuk Anda yang Mempesona.</p>
+        <a href="#shop" class="shop-btn">Lihat Koleksi</a>
+    </header>
+
+    <!-- Kategori Produk -->
+    <section id="shop" class="categories">
+        <h2>Koleksi Kami</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>👗 Pakaian & Rok</h3>
+                <p>Koleksi dress sutra dan rok berenda khas coquette.</p>
+            </div>
+            <div class="card">
+                <h3>👠 Sepatu & Aksesoris</h3>
+                <p>Heels, pita, dan kacamata berdesain klasik.</p>
+            </div>
+            <div class="card">
+                <h3>💄 Make-up</h3>
+                <p>Produk kecantikan high-end bernuansa pastel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal (Pop-up) -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2 style="font-family: 'Playfair Display', serif; color: #c4828b;">Selamat Datang Kembali 🦢</h2>
+            <p>Silakan masuk untuk melanjutkan belanja.</p>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Nama atau Email Anda" required>
+                <input type="password" id="password" placeholder="Kata Sandi" required>
+                <button type="submit" class="submit-btn">Masuk</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lylé Atelier. L'Art de l'Élégance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
